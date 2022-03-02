@@ -14,7 +14,7 @@ project_id = 'multi_instance_demo' # project name in looker
 instance = 'prod.looker.looker-plus.com'  # host name e.g. 'mydomain.looker.com'
 release_branch = 'prod'  # name of git branch, e.g. 'release-xyz'
 
-sdk = looker_sdk.init40(ini_file, section=instance)
+sdk = looker_sdk.init40()
 
 try:
     sdk.deploy_ref_to_production(project_id=project_id, branch=release_branch)
