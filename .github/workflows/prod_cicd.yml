@@ -17,6 +17,6 @@ jobs:
           python-version: 3.8 #install the python needed
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python prod_cicd.py
+          python .github/workflows/prod_cicd.py
         env:
           key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
