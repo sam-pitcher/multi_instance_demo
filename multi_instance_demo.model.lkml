@@ -1,3 +1,3 @@
 connection: "thelook_bq"
 
-# update 5 uat
+# update 6 actions
