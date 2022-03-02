@@ -1,0 +1,26 @@
+name: py
+
+on:
+  pull_request:
+    branches: [ prod ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8 #install the python needed
+      - name: Install dependencies
+        run: |
+            python -m pip install --upgrade pip
+            pip install looker-sdk
+      - name: execute py script # run the run.py to get the latest data
+        run: |
+          python .github/workflows/prod_cicd.py
+        env:
+          key: ${{ secrets.key }} # if run.py requires passwords..etc, set it as secrets
