@@ -1,3 +1,3 @@
 connection: "thelook_bq"
 
-# update final
+# update with env
