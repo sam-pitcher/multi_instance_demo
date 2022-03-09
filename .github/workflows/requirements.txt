@@ -1,1 +1,0 @@
-looker_sdk==latest

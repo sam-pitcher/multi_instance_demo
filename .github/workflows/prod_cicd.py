@@ -3,12 +3,7 @@ import urllib3
 import os
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-os.environ['LOOKERSDK_BASE_URL'] = 'https://prod.looker.looker-plus.com'
-os.environ['LOOKERSDK_CLIENT_ID'] = 'FV5WWgtZsP8j2xCZSMgz'
-os.environ['LOOKERSDK_CLIENT_SECRET'] = 'PWx5nCYSvWhF2xrcg49mvFgd'
-os.environ['LOOKERSDK_VERIFY_SSL']= 'False'
-os.environ['LOOKERSDK_API_VERSION']= '4.0'
-os.environ["LOOKERSDK_TIMEOUT"] = "120"
+# env variables have been declared in the yaml file
 
 project_id = 'multi_instance_demo' # project name in looker
 instance = 'prod.looker.looker-plus.com'  # host name e.g. 'mydomain.looker.com'
