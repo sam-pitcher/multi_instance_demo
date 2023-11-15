@@ -21,7 +21,7 @@ jobs:
             pip install looker-sdk
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python .github/workflows/prod_cicd.py
+          python .github/workflows/uat_cicd.py
         env:
           LOOKERSDK_CLIENT_ID: ${{ secrets.CLIENT_ID }}
           LOOKERSDK_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
