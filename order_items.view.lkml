@@ -64,8 +64,8 @@ view: order_items {
     value_format_name: usd
   }
 
-  measure: max_sale_price {
-    type: max
+  measure: min_sale_price {
+    type: min
     sql: ${sale_price} ;;
     value_format_name: usd
   }
