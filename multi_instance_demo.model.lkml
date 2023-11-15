@@ -1,3 +1,4 @@
-connection: "thelook_bq"
+connection: "sam-pitcher-playground"
 
-# TEST
+include: "data.view"
+include: "data.dashboard"
