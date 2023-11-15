@@ -70,4 +70,9 @@ view: order_items {
     value_format_name: usd
   }
 
+  measure: count_orders {
+    type: count_distinct
+    sql: ${order_id} ;;
+  }
+
 }
