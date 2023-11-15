@@ -75,4 +75,9 @@ view: order_items {
     sql: ${order_id} ;;
   }
 
+  measure: count_users {
+    type: count_distinct
+    sql: ${user_id} ;;
+  }
+
 }
