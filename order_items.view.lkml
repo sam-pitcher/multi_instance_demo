@@ -75,4 +75,14 @@ view: order_items {
     sql: ${order_id} ;;
   }
 
+  measure: avg_sale_price {
+    type: average
+    sql: ${sale_price} ;;
+  }
+
+  measure: max_sale_price {
+    type: max
+    sql: ${sale_price} ;;
+  }
+
 }
