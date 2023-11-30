@@ -14,7 +14,8 @@ Here we use the API with a Looker Admin account to deploy the code.
 Development instance is set up as default. This means you can develop your code in personal and shared branches and then 'push to prod' to merge with the master branch and deploy the code to 'Production Mode' in the instance.
 UAT and Prod instances need to be set to [Advanced Deploy Mode](https://docs.looker.com/data-modeling/getting-started/advanced-deploy-mode).
 
-<img width="1201" alt="image" src="https://user-images.githubusercontent.com/45974014/156516070-756788f9-8ee1-4053-a92f-6632353768ae.png">
+<img width="997" alt="image" src="https://github.com/sam-pitcher/multi_instance_demo/assets/45974014/96ec36d9-dc4a-434a-92b7-e8733f31965b">
+
 
 ## GitHub Set Up
 ### Branches
