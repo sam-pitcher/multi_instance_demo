@@ -25,7 +25,7 @@ jobs:
         env:
           LOOKERSDK_CLIENT_ID: ${{ secrets.CLIENT_ID }}
           LOOKERSDK_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          LOOKERSDK_BASE_URL: 'https://prod.looker.looker-plus.com'
+          LOOKERSDK_BASE_URL: 'https://452227bf-6f71-4262-bb19-e913e4ee41db.looker.app'
           LOOKERSDK_VERIFY_SSL: 'False'
           LOOKERSDK_API_VERSION: '4.0'
           LOOKERSDK_TIMEOUT: "120"
