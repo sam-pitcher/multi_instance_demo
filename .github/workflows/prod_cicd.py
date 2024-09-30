@@ -7,7 +7,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 project_id = 'multi_instance_demo' # project name in looker
 instance = '452227bf-6f71-4262-bb19-e913e4ee41db.looker.app'  # host name e.g. 'mydomain.looker.com'
-release_branch = 'prod'  # name of git branch, e.g. 'release-xyz'
+release_branch = 'master'  # name of git branch, e.g. 'release-xyz'
 
 sdk = looker_sdk.init40()
 
