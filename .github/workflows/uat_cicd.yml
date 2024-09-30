@@ -2,7 +2,7 @@ name: py
 
 on:
   pull_request:
-    branches: [ prod ]
+    branches: [ uat ]
 
 jobs:
   build:
@@ -21,11 +21,11 @@ jobs:
             pip install looker-sdk
       - name: execute py script # run the run.py to get the latest data
         run: |
-          python .github/workflows/prod_cicd.py
+          python .github/workflows/uat_cicd.py
         env:
           LOOKERSDK_CLIENT_ID: ${{ secrets.CLIENT_ID }}
           LOOKERSDK_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          LOOKERSDK_BASE_URL: 'https://452227bf-6f71-4262-bb19-e913e4ee41db.looker.app'
+          LOOKERSDK_BASE_URL: 'https://test.looker.shredr.xyz/'
           LOOKERSDK_VERIFY_SSL: 'False'
           LOOKERSDK_API_VERSION: '4.0'
           LOOKERSDK_TIMEOUT: "120"
