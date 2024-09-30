@@ -70,4 +70,19 @@ view: order_items {
     value_format_name: usd
   }
 
+  measure: count_orders {
+    type: count_distinct
+    sql: ${order_id} ;;
+  }
+
+  measure: avg_sale_price {
+    type: average
+    sql: ${sale_price} ;;
+  }
+
+  measure: max_sale_price {
+    type: max
+    sql: ${sale_price} ;;
+  }
+
 }
