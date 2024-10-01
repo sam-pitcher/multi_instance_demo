@@ -7,5 +7,11 @@ view: data {
 
   dimension: date {
     type: date
+    convert_tz: no
+  }
+
+  dimension: environment {
+    type: string
+    sql: "{{_user_attributes['env']}}" ;;
   }
 }
