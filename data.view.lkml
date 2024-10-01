@@ -10,7 +10,14 @@ view: data {
     convert_tz: no
   }
 
-  dimension: new {}
+  dimension: new {
+    type: yesno
+  }
+
+  dimension: sam {
+    type: string
+    # THIS IS TO PUSH TO PROD!!!!
+  }
 
   dimension: environment {
     type: string
