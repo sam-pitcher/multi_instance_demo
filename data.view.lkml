@@ -10,6 +10,8 @@ view: data {
     convert_tz: no
   }
 
+  dimension: new {}
+
   dimension: environment {
     type: string
     sql: "{{_user_attributes['env']}}" ;;
